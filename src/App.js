@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import data from './static/data/products.json'
+import Item from './Components/Item.js'
 
 class App extends Component {
   render() {
     return (
       <div>
         <p>
-          I hate cs
+          <Item />
+          Shelf will go here in the future
         </p>
       </div>
     );
