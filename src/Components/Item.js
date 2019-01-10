@@ -3,8 +3,9 @@ import data from '../static/data/products.json'
 
 export default class Item extends React.Component{
   render(){
+    let products = data.products;
     return(
-    <p>this is an item </p>
+      <p>{products[0].id}</p>
     )
   }
 }
