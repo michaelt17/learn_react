@@ -24,5 +24,5 @@ const CardImage = styled.img`
   width: 100%;
 `
 const Add = styled.button`
-
+  background-color: yellow;
 `
