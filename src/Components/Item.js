@@ -1,11 +1,28 @@
-import React, {Component} from 'react'
-import data from '../static/data/products.json'
+import React, {Component} from 'react';
+import styled from 'styled-components';
 
 export default class Item extends React.Component{
+
   render(){
-    let products = data.products;
     return(
-      <p>{products[0].id}</p>
-    )
+      <Holder>
+        <CardImage src = {require(`../static/products/${this.props.info.sku}_2.jpg`)}/>
+        <p>{this.props.info.title}</p>
+        <p>Price: {this.props.info.price}</p>
+        <Add> Add to Cart </Add>
+      </Holder>
+    );
   }
 }
+
+const Holder = styled.div`
+  width: 150px;
+  padding: 10px 0px 100px 20px;
+`
+
+const CardImage = styled.img`
+  width: 100%;
+`
+const Add = styled.button`
+
+`
