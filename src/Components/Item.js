@@ -11,7 +11,7 @@ export default class Item extends React.Component{
         <p>{this.props.info.title}</p>
         <p>Price: {this.props.info.price}</p>
         <Add onClick={() => this.props.itemAddProduct}> Add to Cart </Add>
-      <Holder>
+      </Holder>
     );
   }
 }
